@@ -26,13 +26,12 @@ void serialize (measurement_t measurements, char b[]) {
 void deserialize (measurement_t measurements, char b[]) {
 	measurement_t temp;
 	memcpy(&temp, b, sizeof(temp));
-	cout << temp.source << "\n";
-	cout << temp.id << "\n";
-	cout << temp.timestamp << "\n";
-	cout << temp.temperature << "\n";
-	cout << temp.humidity << "\n";
-	cout << temp.pressure << "\n";
-
+	printf("source: %d\n", temp.source);
+	printf("id: %d\n", temp.id);
+	printf("timestamp: %d\n", temp.timestamp);
+	printf("temperature: %d\n", temp.temperature);
+	printf("humidity: %d\n", temp.humidity);
+	printf("pressure: %d\n", temp.pressure);
 }
 
 int main () {
