@@ -2,7 +2,7 @@
 #include <cstring>
 using namespace std;
 
-/*Found out that the given structure example has char array was declared
+/*Found out that the given structure example char array was declared
 wrong and the program couldn't compile */
 typedef struct {
 	char source[10];
